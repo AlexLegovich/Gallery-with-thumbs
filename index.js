@@ -32,7 +32,6 @@ const animals = [
 
 function setThumbImages(data) {
   const thumbnails = document.querySelectorAll('.thumb-image ')
-  console.log(thumbnails)
   thumbnails.forEach((thumbnail, index) => {
     thumbnail.style.backgroundImage = `url(${data[index].image})`
     thumbnail.style.backgroundSize = 'cover'
@@ -84,38 +83,3 @@ changeImage()
 
 
 
-// // const thumbsImages = document.querySelectorAll('.gallery__thumbs img');
-// // const mainImage = document.querySelector('.gallery__image-main img');
-
-// function setThumbImages(data) {
-//   const thumbsImages = document.querySelectorAll('.gallery__thumbs img')
-//   thumbsImages.forEach((image, index) => {
-//     image.src = data[index].image
-//   })
-// }
-
-// setThumbImages(animals)
-
-// function setMainImage(data, index) {
-//   const mainImage = document.querySelector('.gallery__image-main img')
-//   mainImage.src = data[index].image
-// }
-
-// setMainImage(animals, 0)
-
-// function addThumbClickListeners() {
-//   const thumbs = document.querySelectorAll('.gallery__thumb');
-//   const mainImage = document.querySelector('.gallery__image-main img');
-//   thumbs[0].classList.add('active');
-
-//   thumbs.forEach((thumb) => {
-//     const thumbImage = thumb.querySelector('img'); // Get the image inside the thumbnail
-//     thumb.addEventListener('click', function () {
-//       mainImage.src = thumbImage.src;
-//       thumbs.forEach((element) => element.classList.remove('active'));
-//       thumb.classList.add('active');
-//     });
-//   });
-// }
-
-// addThumbClickListeners();
