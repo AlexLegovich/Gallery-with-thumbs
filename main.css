@@ -1,0 +1,101 @@
+@import 'reset.css';
+
+body{
+  font-family: "Host Grotesk", serif;
+  background-color: #FEEFD6;
+}
+
+[class*=__container]{
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+
+.gallery {
+  padding-top: 32px;
+
+}
+.gallery__container {
+}
+.gallery__intro{
+  display: flex;
+  margin-bottom: 32px;
+  align-items: flex-end;
+  justify-content: space-between;
+  
+}
+
+
+.gallery__title{
+  padding-top: 5px;
+  font-size: 64px;
+  font-weight: 700;
+  color: #161515;
+  max-width: 600px;
+  line-height: 100%;
+}
+
+.gallery__text{
+  line-height: 135%;
+  max-width: 700px;
+  color: #161515;
+}
+
+.gallery__inner{
+  display: flex;
+  gap: 16px;
+  flex-direction: row-reverse;
+  align-items: stretch;
+}
+.shape {
+}
+.main-image {
+  flex: 1 1 100%;
+  min-height: 100%;
+  background-color: #fff;
+  border-radius: 20px;
+  position: relative;
+  opacity: 1;
+  background-color: #161515;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.main-image.animate{
+}
+
+.main-image .tn-atom{
+}
+
+
+.gallery-thumbs {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  width: 100%;
+  flex: 1 1 15%;
+
+}
+.thumb-image {
+  min-height: 150px;
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  opacity: 0.4;
+  cursor: pointer;
+  transition: all 0.3s;
+  transform: scale(0.9);
+}
+
+.thumb-image.active{
+  opacity: 1;
+  cursor: auto;
+  transform: scale(1);
+}
+
+.thumb-image .tn-atom{
+  height: 100%;
+}
