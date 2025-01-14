@@ -81,7 +81,6 @@ body{
 @media (max-width: 767.98px){
   .main-image{
     min-height: 400px;
-    background-size: 60% center;
   }
     
 }
@@ -184,7 +183,7 @@ body{
   cursor: pointer;
   transition: all 0.5s cubic-bezier(0.65, 0, 0.35, 1);
   transform: scale(0.9);
-  box-shadow: box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+ box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
 .thumb-image.active{
